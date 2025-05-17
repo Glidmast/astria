@@ -1,0 +1,29 @@
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "artists"
+    label: "Artists"
+    folder: "content/artists"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Country", name: "country", widget: "string" }
+      - { label: "Quote", name: "quote", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+
+  - name: "artworks"
+    label: "Artworks"
+    folder: "content/artworks"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Artist", name: "artist", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }

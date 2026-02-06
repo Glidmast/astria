@@ -1,0 +1,25 @@
+{
+  "artists": [
+    {
+      "name": "Elena Moreau",
+      "country": "France",
+      "quote": "Light as a language.",
+      "image": "/uploads/aurora.jpg",
+      "bio": "Elena explores the interplay of light and architecture with delicate oils and layered glazes."
+    },
+    {
+      "name": "Jonas Veil",
+      "country": "Norway",
+      "quote": "A quiet geometry.",
+      "image": "/uploads/luna.jpg",
+      "bio": "Jonas works in mixed media, balancing precision and serendipity across minimal palettes."
+    },
+    {
+      "name": "Maya Chen",
+      "country": "Taiwan",
+      "quote": "Texture remembers.",
+      "image": "/uploads/solstice.jpg",
+      "bio": "Maya's practice investigates material memory through layered pigment and tactile surfaces."
+    }
+  ]
+}

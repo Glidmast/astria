@@ -1,0 +1,51 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+site_url: "/"
+logo_url: "/uploads/placeholder.jpg"
+display_url: "/"
+
+collections:
+  - name: "artists"
+    label: "Artists"
+    label_singular: "Artist"
+    editor:
+      preview: false
+    files:
+      - file: "src/content/artists.json"
+        label: "Artists JSON"
+        name: "artists-json"
+        fields:
+          - { label: "Artists", name: "artists", widget: "list", hint: "Add artists", collapsed: false, fields: [
+              { label: "Name", name: "name", widget: "string" },
+              { label: "Country", name: "country", widget: "string" },
+              { label: "Quote", name: "quote", widget: "string" },
+              { label: "Image", name: "image", widget: "image", media_library: { config: {} } },
+              { label: "Bio", name: "bio", widget: "text" }
+            ]
+          }
+
+  - name: "artworks"
+    label: "Artworks"
+    label_singular: "Artwork"
+    editor:
+      preview: false
+    files:
+      - file: "src/content/artworks.json"
+        label: "Artworks JSON"
+        name: "artworks-json"
+        fields:
+          - { label: "Artworks", name: "artworks", widget: "list", hint: "Add artworks", collapsed: false, fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Artist Name", name: "artistName", widget: "string" },
+              { label: "Year", name: "year", widget: "string" },
+              { label: "Medium", name: "medium", widget: "string" },
+              { label: "Category", name: "category", widget: "string" },
+              { label: "Image", name: "image", widget: "image", media_library: { config: {} } },
+              { label: "Description", name: "description", widget: "text" }
+            ]
+          }

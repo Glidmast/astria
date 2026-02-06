@@ -1,0 +1,31 @@
+{
+  "artworks": [
+    {
+      "title": "Aurora Study",
+      "artistName": "Elena Moreau",
+      "year": "2023",
+      "medium": "Oil on panel",
+      "category": "Painting",
+      "image": "/uploads/aurora.jpg",
+      "description": "A soft study of light and form."
+    },
+    {
+      "title": "Luna Fragment",
+      "artistName": "Jonas Veil",
+      "year": "2022",
+      "medium": "Mixed media",
+      "category": "Mixed Media",
+      "image": "/uploads/luna.jpg",
+      "description": "Geometric planes with muted tonal contrasts."
+    },
+    {
+      "title": "Solstice Shell",
+      "artistName": "Maya Chen",
+      "year": "2021",
+      "medium": "Pigment and plaster",
+      "category": "Sculpture",
+      "image": "/uploads/solstice.jpg",
+      "description": "Layered textures reminiscent of seasonally shifting light."
+    }
+  ]
+}
